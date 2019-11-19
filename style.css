@@ -1,0 +1,41 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+body {
+    max-width: 20em;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;  
+    font-size: 16px;
+    line-height: 2;
+}
+
+ul {
+    display: inline-block;
+    padding: 0;
+    align-content: center;
+    
+}
+
+li {
+    display: block;
+    transform: translate(-5em, 0);
+    opacity: 0;
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+
+ul li:nth-child(2) { transition-delay: 0.1s; }
+ul li:nth-child(3) { transition-delay: 0.2s; }
+ul li:nth-child(4) { transition-delay: 0.3s; }
+ul li:nth-child(5) { transition-delay: 0.4s; }
+ul li:nth-child(6) { transition-delay: 0.5s; }
+ul li:nth-child(7) { transition-delay: 0.6s; }
+
+.loaded ul li {
+    opacity: 1;
+    transform: translate(0, 0);
+
+}
+
+i {
+    margin-right: 5px;
+}
+
